@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <ImageView fx:id="imageUserDefault" fitHeight="102.0" fitWidth="115.0" layoutX="119.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <!--<Image url="@../../images/default.png" />-->
+             <Image url="@../../assets/images/userdefault.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="53.0" layoutY="128.0" prefHeight="37.0" prefWidth="234.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="imageUser" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/user.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUsername" prefHeight="30.0" prefWidth="204.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox layoutX="53.0" layoutY="177.0" prefHeight="37.0" prefWidth="234.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="imagePass" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/pass.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txtPassword" prefHeight="30.0" prefWidth="204.0" />
+         </children>
+      </HBox>
+      <ImageView fx:id="buttonLogin" fitHeight="44.0" fitWidth="55.0" layoutX="148.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
